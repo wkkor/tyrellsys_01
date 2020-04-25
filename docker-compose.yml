@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    image: php:7.2.30-apache
+    container_name: php7-apache-container-2020
+    ports: 
+      - "10800:80"
+    volumes:
+      - "./html:/var/www/html" 
